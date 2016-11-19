@@ -1,0 +1,1104 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_2163711f03c44733aaa4e99240941eb6 {
+                position : relative;
+                width : 500.0px;
+                height: 500.0px;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_2163711f03c44733aaa4e99240941eb6" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_2163711f03c44733aaa4e99240941eb6 = L.map('map_2163711f03c44733aaa4e99240941eb6', {
+                                           center:[52.0218,-0.7599],
+                                           zoom: 10,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_e6d3fbf0c58f4939b7633dea96748fbf = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 15,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_2163711f03c44733aaa4e99240941eb6);
+
+        
+        
+            
+
+            var marker_690759effb944fecb15f931bf6f00538 = L.marker(
+                [52.006042,-0.726102],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_3cafae433277437d9df305a5eb6b486b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_690759effb944fecb15f931bf6f00538.setIcon(icon_3cafae433277437d9df305a5eb6b486b);
+            
+        
+            
+            var popup_03823d1d8563429894bda1a4ddab76d1 = L.popup({maxWidth: '300'});
+
+            
+                var html_a100de15cb5545aa80de0c7b2892f32e = $('         <div id="html_a100de15cb5545aa80de0c7b2892f32e"                 style="width: 100.0%; height: 100.0%;">                 District MK01   Full#:458 Provisional#:126 Full%=78.4%.</div>                 ')[0];
+                popup_03823d1d8563429894bda1a4ddab76d1.setContent(html_a100de15cb5545aa80de0c7b2892f32e);
+            
+
+            marker_690759effb944fecb15f931bf6f00538.bindPopup(popup_03823d1d8563429894bda1a4ddab76d1);
+
+            
+        
+        
+            
+
+            var marker_7756d657bf594339b951b9ac2c1de2c6 = L.marker(
+                [51.991505,-0.724342],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_5a49262aecd7482ebfa90e2d1c265678 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7756d657bf594339b951b9ac2c1de2c6.setIcon(icon_5a49262aecd7482ebfa90e2d1c265678);
+            
+        
+            
+            var popup_a1840a59052d45109b604050cea0989c = L.popup({maxWidth: '300'});
+
+            
+                var html_09bd0c4059504513989ae48ebdb3a14b = $('         <div id="html_09bd0c4059504513989ae48ebdb3a14b"                 style="width: 100.0%; height: 100.0%;">                 District MK02   Full#:8015 Provisional#:2716 Full%=74.7%.</div>                 ')[0];
+                popup_a1840a59052d45109b604050cea0989c.setContent(html_09bd0c4059504513989ae48ebdb3a14b);
+            
+
+            marker_7756d657bf594339b951b9ac2c1de2c6.bindPopup(popup_a1840a59052d45109b604050cea0989c);
+
+            
+        
+        
+            
+
+            var marker_ca8c332cfcc24324a94f10338e1a3be9 = L.marker(
+                [51.994067,-0.752453],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_c14d143159f04101a4211e4567f5c5fb = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ca8c332cfcc24324a94f10338e1a3be9.setIcon(icon_c14d143159f04101a4211e4567f5c5fb);
+            
+        
+            
+            var popup_689d0cdeffb14d64bc5eb2d886bef490 = L.popup({maxWidth: '300'});
+
+            
+                var html_2d40acb9e4dc415c9f30ba751f14ef76 = $('         <div id="html_2d40acb9e4dc415c9f30ba751f14ef76"                 style="width: 100.0%; height: 100.0%;">                 District MK03   Full#:15027 Provisional#:2822 Full%=84.2%.</div>                 ')[0];
+                popup_689d0cdeffb14d64bc5eb2d886bef490.setContent(html_2d40acb9e4dc415c9f30ba751f14ef76);
+            
+
+            marker_ca8c332cfcc24324a94f10338e1a3be9.bindPopup(popup_689d0cdeffb14d64bc5eb2d886bef490);
+
+            
+        
+        
+            
+
+            var marker_9a07cf859afa478cb44a02f7314802dd = L.marker(
+                [52.003753,-0.768654],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_23505dcf52d841a7988faea6d85eecba = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9a07cf859afa478cb44a02f7314802dd.setIcon(icon_23505dcf52d841a7988faea6d85eecba);
+            
+        
+            
+            var popup_c349d9a3b7f74741be685ac94930a646 = L.popup({maxWidth: '300'});
+
+            
+                var html_834676f65b8e4a14939c2baa53a458a5 = $('         <div id="html_834676f65b8e4a14939c2baa53a458a5"                 style="width: 100.0%; height: 100.0%;">                 District MK04   Full#:14426 Provisional#:2106 Full%=87.3%.</div>                 ')[0];
+                popup_c349d9a3b7f74741be685ac94930a646.setContent(html_834676f65b8e4a14939c2baa53a458a5);
+            
+
+            marker_9a07cf859afa478cb44a02f7314802dd.bindPopup(popup_c349d9a3b7f74741be685ac94930a646);
+
+            
+        
+        
+            
+
+            var marker_86949eda2e724a4da8388a721c992cf0 = L.marker(
+                [52.019583,-0.769548],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_2a44a9cb59b948368f28ae73eed4ab93 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_86949eda2e724a4da8388a721c992cf0.setIcon(icon_2a44a9cb59b948368f28ae73eed4ab93);
+            
+        
+            
+            var popup_e967f0167b5046be926e0e57eac58a5b = L.popup({maxWidth: '300'});
+
+            
+                var html_3d1aa97940a345d6879cd96257ebea98 = $('         <div id="html_3d1aa97940a345d6879cd96257ebea98"                 style="width: 100.0%; height: 100.0%;">                 District MK05   Full#:10488 Provisional#:1661 Full%=86.3%.</div>                 ')[0];
+                popup_e967f0167b5046be926e0e57eac58a5b.setContent(html_3d1aa97940a345d6879cd96257ebea98);
+            
+
+            marker_86949eda2e724a4da8388a721c992cf0.bindPopup(popup_e967f0167b5046be926e0e57eac58a5b);
+
+            
+        
+        
+            
+
+            var marker_6247cb1da3884852b5c003b94a253c80 = L.marker(
+                [52.028502,-0.72832],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_96164bdf9ada405eabbddbf828209d47 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6247cb1da3884852b5c003b94a253c80.setIcon(icon_96164bdf9ada405eabbddbf828209d47);
+            
+        
+            
+            var popup_cb4bf82c6b7c4efba832b344bb2bbbf5 = L.popup({maxWidth: '300'});
+
+            
+                var html_32bffd9a1f204dcdb2fa2a8f5ef4ca28 = $('         <div id="html_32bffd9a1f204dcdb2fa2a8f5ef4ca28"                 style="width: 100.0%; height: 100.0%;">                 District MK06   Full#:14106 Provisional#:6830 Full%=67.4%.</div>                 ')[0];
+                popup_cb4bf82c6b7c4efba832b344bb2bbbf5.setContent(html_32bffd9a1f204dcdb2fa2a8f5ef4ca28);
+            
+
+            marker_6247cb1da3884852b5c003b94a253c80.bindPopup(popup_cb4bf82c6b7c4efba832b344bb2bbbf5);
+
+            
+        
+        
+            
+
+            var marker_830b7064e4874da89a5d98d8f7266288 = L.marker(
+                [52.018159,-0.692361],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_9103ca078dec4732a94b239d3f5806e1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_830b7064e4874da89a5d98d8f7266288.setIcon(icon_9103ca078dec4732a94b239d3f5806e1);
+            
+        
+            
+            var popup_2a4bc241a4404b77a7a77c45bee1c689 = L.popup({maxWidth: '300'});
+
+            
+                var html_f5559e7733e74886b8776e146673e815 = $('         <div id="html_f5559e7733e74886b8776e146673e815"                 style="width: 100.0%; height: 100.0%;">                 District MK07   Full#:10204 Provisional#:1610 Full%=86.4%.</div>                 ')[0];
+                popup_2a4bc241a4404b77a7a77c45bee1c689.setContent(html_f5559e7733e74886b8776e146673e815);
+            
+
+            marker_830b7064e4874da89a5d98d8f7266288.bindPopup(popup_2a4bc241a4404b77a7a77c45bee1c689);
+
+            
+        
+        
+            
+
+            var marker_daf1f2882c3343cd9beb3bc3166d5ea3 = L.marker(
+                [52.033262,-0.806771],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_25530560d81a48caab9d46f81b15e000 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_daf1f2882c3343cd9beb3bc3166d5ea3.setIcon(icon_25530560d81a48caab9d46f81b15e000);
+            
+        
+            
+            var popup_735fb8f47e114ac9a108e346886d0a72 = L.popup({maxWidth: '300'});
+
+            
+                var html_a2b4e131519f4a4a8ba947912c6ba1b6 = $('         <div id="html_a2b4e131519f4a4a8ba947912c6ba1b6"                 style="width: 100.0%; height: 100.0%;">                 District MK08   Full#:8349 Provisional#:1398 Full%=85.7%.</div>                 ')[0];
+                popup_735fb8f47e114ac9a108e346886d0a72.setContent(html_a2b4e131519f4a4a8ba947912c6ba1b6);
+            
+
+            marker_daf1f2882c3343cd9beb3bc3166d5ea3.bindPopup(popup_735fb8f47e114ac9a108e346886d0a72);
+
+            
+        
+        
+            
+
+            var marker_6f7339b490c04037901d10f127adcd48 = L.marker(
+                [52.040574,-0.733722],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_c58ee8ad2a8945559383c565e8964d28 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6f7339b490c04037901d10f127adcd48.setIcon(icon_c58ee8ad2a8945559383c565e8964d28);
+            
+        
+            
+            var popup_f232c2ab49ff4c82914e2d6cdf1c951d = L.popup({maxWidth: '300'});
+
+            
+                var html_38c447952c4348d3b46dfd714a812f3f = $('         <div id="html_38c447952c4348d3b46dfd714a812f3f"                 style="width: 100.0%; height: 100.0%;">                 District MK09   Full#:1805 Provisional#:725 Full%=71.3%.</div>                 ')[0];
+                popup_f232c2ab49ff4c82914e2d6cdf1c951d.setContent(html_38c447952c4348d3b46dfd714a812f3f);
+            
+
+            marker_6f7339b490c04037901d10f127adcd48.bindPopup(popup_f232c2ab49ff4c82914e2d6cdf1c951d);
+
+            
+        
+        
+            
+
+            var marker_771d8b459f7c47ffb267093c366b84e9 = L.marker(
+                [52.038708,-0.717943],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_96a2083c3131437a9536c9355c1fe983 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_771d8b459f7c47ffb267093c366b84e9.setIcon(icon_96a2083c3131437a9536c9355c1fe983);
+            
+        
+            
+            var popup_cfd7995a5e0a4b0aa0fdd30f318b324b = L.popup({maxWidth: '300'});
+
+            
+                var html_5dcd5b760ee4450ca766af9f5a2f62ed = $('         <div id="html_5dcd5b760ee4450ca766af9f5a2f62ed"                 style="width: 100.0%; height: 100.0%;">                 District MK10   Full#:7177 Provisional#:1044 Full%=87.3%.</div>                 ')[0];
+                popup_cfd7995a5e0a4b0aa0fdd30f318b324b.setContent(html_5dcd5b760ee4450ca766af9f5a2f62ed);
+            
+
+            marker_771d8b459f7c47ffb267093c366b84e9.bindPopup(popup_cfd7995a5e0a4b0aa0fdd30f318b324b);
+
+            
+        
+        
+            
+
+            var marker_c2285a56284546e08955d73875e44d2b = L.marker(
+                [52.051048,-0.838194],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_1af48d3c2f3d4dc5b42bc0ad7aa75630 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c2285a56284546e08955d73875e44d2b.setIcon(icon_1af48d3c2f3d4dc5b42bc0ad7aa75630);
+            
+        
+            
+            var popup_4aa3755a564b457fa7d5751606c375c7 = L.popup({maxWidth: '300'});
+
+            
+                var html_7eedecfea5d74ee49b3c1c37ff4c3bdf = $('         <div id="html_7eedecfea5d74ee49b3c1c37ff4c3bdf"                 style="width: 100.0%; height: 100.0%;">                 District MK11   Full#:5136 Provisional#:1050 Full%=83.0%.</div>                 ')[0];
+                popup_4aa3755a564b457fa7d5751606c375c7.setContent(html_7eedecfea5d74ee49b3c1c37ff4c3bdf);
+            
+
+            marker_c2285a56284546e08955d73875e44d2b.bindPopup(popup_4aa3755a564b457fa7d5751606c375c7);
+
+            
+        
+        
+            
+
+            var marker_245a707c04484f1787d5a3ee92572464 = L.marker(
+                [52.057767,-0.820093],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_3a4b5ec43aa3469aab8e1439afe4c32c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_245a707c04484f1787d5a3ee92572464.setIcon(icon_3a4b5ec43aa3469aab8e1439afe4c32c);
+            
+        
+            
+            var popup_dd2015e344f144d4ac9451bf18326233 = L.popup({maxWidth: '300'});
+
+            
+                var html_853f786ec09d447a901c3991b92ba0ed = $('         <div id="html_853f786ec09d447a901c3991b92ba0ed"                 style="width: 100.0%; height: 100.0%;">                 District MK12   Full#:7463 Provisional#:2180 Full%=77.4%.</div>                 ')[0];
+                popup_dd2015e344f144d4ac9451bf18326233.setContent(html_853f786ec09d447a901c3991b92ba0ed);
+            
+
+            marker_245a707c04484f1787d5a3ee92572464.bindPopup(popup_dd2015e344f144d4ac9451bf18326233);
+
+            
+        
+        
+            
+
+            var marker_88a74b932ae64c75987591130dd94214 = L.marker(
+                [52.056028,-0.796945],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_4d588ebcedbc4a1c83a5c2962097ad4c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_88a74b932ae64c75987591130dd94214.setIcon(icon_4d588ebcedbc4a1c83a5c2962097ad4c);
+            
+        
+            
+            var popup_4659b46416904225ac48a9c97dcae3bc = L.popup({maxWidth: '300'});
+
+            
+                var html_5ed945af502e4f4aa18cd47a87a656fe = $('         <div id="html_5ed945af502e4f4aa18cd47a87a656fe"                 style="width: 100.0%; height: 100.0%;">                 District MK13   Full#:11778 Provisional#:3178 Full%=78.8%.</div>                 ')[0];
+                popup_4659b46416904225ac48a9c97dcae3bc.setContent(html_5ed945af502e4f4aa18cd47a87a656fe);
+            
+
+            marker_88a74b932ae64c75987591130dd94214.bindPopup(popup_4659b46416904225ac48a9c97dcae3bc);
+
+            
+        
+        
+            
+
+            var marker_33e70604f9f24de599e468afe53ed7ce = L.marker(
+                [52.064174,-0.782128],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_80fc79440b624c6d8cea4495a3b16f2d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_33e70604f9f24de599e468afe53ed7ce.setIcon(icon_80fc79440b624c6d8cea4495a3b16f2d);
+            
+        
+            
+            var popup_bb810f796ca046a3a1da1225623feb7b = L.popup({maxWidth: '300'});
+
+            
+                var html_90ea6ca330624f3fa39ba8454f838b89 = $('         <div id="html_90ea6ca330624f3fa39ba8454f838b89"                 style="width: 100.0%; height: 100.0%;">                 District MK14   Full#:12364 Provisional#:3518 Full%=77.8%.</div>                 ')[0];
+                popup_bb810f796ca046a3a1da1225623feb7b.setContent(html_90ea6ca330624f3fa39ba8454f838b89);
+            
+
+            marker_33e70604f9f24de599e468afe53ed7ce.bindPopup(popup_bb810f796ca046a3a1da1225623feb7b);
+
+            
+        
+        
+            
+
+            var marker_73bbd0ec998c4a57aed937424d757347 = L.marker(
+                [52.051214,-0.718167],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_7d0eeb3666f145f79d20e95cae7e4919 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_73bbd0ec998c4a57aed937424d757347.setIcon(icon_7d0eeb3666f145f79d20e95cae7e4919);
+            
+        
+            
+            var popup_c417a1be175e4bf88d10021c96d461fd = L.popup({maxWidth: '300'});
+
+            
+                var html_6c947c4b540e45e99537732c9fe84042 = $('         <div id="html_6c947c4b540e45e99537732c9fe84042"                 style="width: 100.0%; height: 100.0%;">                 District MK15   Full#:5364 Provisional#:795 Full%=87.1%.</div>                 ')[0];
+                popup_c417a1be175e4bf88d10021c96d461fd.setContent(html_6c947c4b540e45e99537732c9fe84042);
+            
+
+            marker_73bbd0ec998c4a57aed937424d757347.bindPopup(popup_c417a1be175e4bf88d10021c96d461fd);
+
+            
+        
+        
+            
+
+            var marker_e4e570166a6c4e40bfda079ae31fad07 = L.marker(
+                [52.103982,-0.713042],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_ab446f1bc8da41389982a9b61a62ef20 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e4e570166a6c4e40bfda079ae31fad07.setIcon(icon_ab446f1bc8da41389982a9b61a62ef20);
+            
+        
+            
+            var popup_bb94b2c0ae044d5da10062ddfd45e47f = L.popup({maxWidth: '300'});
+
+            
+                var html_f0af5c82ce924ffaaf891600125ffb02 = $('         <div id="html_f0af5c82ce924ffaaf891600125ffb02"                 style="width: 100.0%; height: 100.0%;">                 District MK16   Full#:13894 Provisional#:1617 Full%=89.6%.</div>                 ')[0];
+                popup_bb94b2c0ae044d5da10062ddfd45e47f.setContent(html_f0af5c82ce924ffaaf891600125ffb02);
+            
+
+            marker_e4e570166a6c4e40bfda079ae31fad07.bindPopup(popup_bb94b2c0ae044d5da10062ddfd45e47f);
+
+            
+        
+        
+            
+
+            var marker_003cc699066e43f4bc96ac494d3827b4 = L.marker(
+                [51.997976,-0.718025],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_0920f7517f324005b75f96ba82583a2a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_003cc699066e43f4bc96ac494d3827b4.setIcon(icon_0920f7517f324005b75f96ba82583a2a);
+            
+        
+            
+            var popup_263d3622a05044beaf511d6afe43ba1b = L.popup({maxWidth: '300'});
+
+            
+                var html_3b5fd3dde788492c9a93c2bcbc3b8852 = $('         <div id="html_3b5fd3dde788492c9a93c2bcbc3b8852"                 style="width: 100.0%; height: 100.0%;">                 District MK17   Full#:14269 Provisional#:975 Full%=93.6%.</div>                 ')[0];
+                popup_263d3622a05044beaf511d6afe43ba1b.setContent(html_3b5fd3dde788492c9a93c2bcbc3b8852);
+            
+
+            marker_003cc699066e43f4bc96ac494d3827b4.bindPopup(popup_263d3622a05044beaf511d6afe43ba1b);
+
+            
+        
+        
+            
+
+            var marker_cf3405bc075c4be8afc21cf4e0ac699e = L.marker(
+                [51.985593,-0.950963],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_105378cf2b3f48d098bbf22e369ffe2f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cf3405bc075c4be8afc21cf4e0ac699e.setIcon(icon_105378cf2b3f48d098bbf22e369ffe2f);
+            
+        
+            
+            var popup_292d0ef9abcf441dabfbae12de9a62c6 = L.popup({maxWidth: '300'});
+
+            
+                var html_c576b5139679403e9a6e16376208b80b = $('         <div id="html_c576b5139679403e9a6e16376208b80b"                 style="width: 100.0%; height: 100.0%;">                 District MK18   Full#:23093 Provisional#:2732 Full%=89.4%.</div>                 ')[0];
+                popup_292d0ef9abcf441dabfbae12de9a62c6.setContent(html_c576b5139679403e9a6e16376208b80b);
+            
+
+            marker_cf3405bc075c4be8afc21cf4e0ac699e.bindPopup(popup_292d0ef9abcf441dabfbae12de9a62c6);
+
+            
+        
+        
+            
+
+            var marker_9fe594367b0e4fb095583c6157dee2fc = L.marker(
+                [52.071511,-0.843227],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_211412e391934fc79b3bbd493ab246cf = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9fe594367b0e4fb095583c6157dee2fc.setIcon(icon_211412e391934fc79b3bbd493ab246cf);
+            
+        
+            
+            var popup_cb2884c46e724255bdad72457bc0f37e = L.popup({maxWidth: '300'});
+
+            
+                var html_057ec59f11b1475c9e22cb8f949fdb91 = $('         <div id="html_057ec59f11b1475c9e22cb8f949fdb91"                 style="width: 100.0%; height: 100.0%;">                 District MK19   Full#:8883 Provisional#:773 Full%=92.0%.</div>                 ')[0];
+                popup_cb2884c46e724255bdad72457bc0f37e.setContent(html_057ec59f11b1475c9e22cb8f949fdb91);
+            
+
+            marker_9fe594367b0e4fb095583c6157dee2fc.bindPopup(popup_cb2884c46e724255bdad72457bc0f37e);
+
+            
+        
+        
+            
+
+            var marker_70af8c6297934fe887fe026cfdd9087f = L.marker(
+                [52.13717,-0.479912],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_2479fab0daf4488c8d4a4f8a0a14730f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_70af8c6297934fe887fe026cfdd9087f.setIcon(icon_2479fab0daf4488c8d4a4f8a0a14730f);
+            
+        
+            
+            var popup_e66bfe4869ad409fb1e48c54adde219d = L.popup({maxWidth: '300'});
+
+            
+                var html_b000d33bbd7e417aade0dd5dfa2aab88 = $('         <div id="html_b000d33bbd7e417aade0dd5dfa2aab88"                 style="width: 100.0%; height: 100.0%;">                 District MK40   Full#:17445 Provisional#:4700 Full%=78.8%.</div>                 ')[0];
+                popup_e66bfe4869ad409fb1e48c54adde219d.setContent(html_b000d33bbd7e417aade0dd5dfa2aab88);
+            
+
+            marker_70af8c6297934fe887fe026cfdd9087f.bindPopup(popup_e66bfe4869ad409fb1e48c54adde219d);
+
+            
+        
+        
+            
+
+            var marker_c07693d0339d492eb5d9d8fda6534d68 = L.marker(
+                [52.163786,-0.444731],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_3eebcfee33a546c6bcd29e3122a1dd42 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c07693d0339d492eb5d9d8fda6534d68.setIcon(icon_3eebcfee33a546c6bcd29e3122a1dd42);
+            
+        
+            
+            var popup_8799a70601c548fa8fec3d448e1417d5 = L.popup({maxWidth: '300'});
+
+            
+                var html_8816e358af7942379df77aa54023192f = $('         <div id="html_8816e358af7942379df77aa54023192f"                 style="width: 100.0%; height: 100.0%;">                 District MK41   Full#:28280 Provisional#:4491 Full%=86.3%.</div>                 ')[0];
+                popup_8799a70601c548fa8fec3d448e1417d5.setContent(html_8816e358af7942379df77aa54023192f);
+            
+
+            marker_c07693d0339d492eb5d9d8fda6534d68.bindPopup(popup_8799a70601c548fa8fec3d448e1417d5);
+
+            
+        
+        
+            
+
+            var marker_d9681dd64b374c61a3aa5b4c56c5fedb = L.marker(
+                [52.118664,-0.469618],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_42a2ff5bc7c642d8b33611ddd33cb393 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d9681dd64b374c61a3aa5b4c56c5fedb.setIcon(icon_42a2ff5bc7c642d8b33611ddd33cb393);
+            
+        
+            
+            var popup_135cd764e3d04550ac01ae7d1fb98438 = L.popup({maxWidth: '300'});
+
+            
+                var html_685e86af95314b24b3b7da7f098a06cf = $('         <div id="html_685e86af95314b24b3b7da7f098a06cf"                 style="width: 100.0%; height: 100.0%;">                 District MK42   Full#:25496 Provisional#:6574 Full%=79.5%.</div>                 ')[0];
+                popup_135cd764e3d04550ac01ae7d1fb98438.setContent(html_685e86af95314b24b3b7da7f098a06cf);
+            
+
+            marker_d9681dd64b374c61a3aa5b4c56c5fedb.bindPopup(popup_135cd764e3d04550ac01ae7d1fb98438);
+
+            
+        
+        
+            
+
+            var marker_59090006495e41668daeb44046fbdb8a = L.marker(
+                [52.1155,-0.56655],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_1e35c706a2db49959775b966ab344e2c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_59090006495e41668daeb44046fbdb8a.setIcon(icon_1e35c706a2db49959775b966ab344e2c);
+            
+        
+            
+            var popup_af66c0a11b5446acaaa353ed5d793335 = L.popup({maxWidth: '300'});
+
+            
+                var html_609cdb41a82b4f11908cccf4640577d2 = $('         <div id="html_609cdb41a82b4f11908cccf4640577d2"                 style="width: 100.0%; height: 100.0%;">                 District MK43   Full#:25091 Provisional#:2394 Full%=91.3%.</div>                 ')[0];
+                popup_af66c0a11b5446acaaa353ed5d793335.setContent(html_609cdb41a82b4f11908cccf4640577d2);
+            
+
+            marker_59090006495e41668daeb44046fbdb8a.bindPopup(popup_af66c0a11b5446acaaa353ed5d793335);
+
+            
+        
+        
+            
+
+            var marker_b4b33ed6e4724603b5f60e3f47577df7 = L.marker(
+                [52.201139,-0.435438],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_85d58316ab304bc794c20623a4609157 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b4b33ed6e4724603b5f60e3f47577df7.setIcon(icon_85d58316ab304bc794c20623a4609157);
+            
+        
+            
+            var popup_34dac02910054f4583aa984e5de21d6c = L.popup({maxWidth: '300'});
+
+            
+                var html_cd4b4f4ffcf249c4910c5aa555867e83 = $('         <div id="html_cd4b4f4ffcf249c4910c5aa555867e83"                 style="width: 100.0%; height: 100.0%;">                 District MK44   Full#:12929 Provisional#:954 Full%=93.1%.</div>                 ')[0];
+                popup_34dac02910054f4583aa984e5de21d6c.setContent(html_cd4b4f4ffcf249c4910c5aa555867e83);
+            
+
+            marker_b4b33ed6e4724603b5f60e3f47577df7.bindPopup(popup_34dac02910054f4583aa984e5de21d6c);
+
+            
+        
+        
+            
+
+            var marker_eec48b613d6243eda79896e3dfe6e9a3 = L.marker(
+                [52.045799,-0.453286],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_964fb8b6b95b4d55af211472cc81a548 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_eec48b613d6243eda79896e3dfe6e9a3.setIcon(icon_964fb8b6b95b4d55af211472cc81a548);
+            
+        
+            
+            var popup_903a2ffb7fec49829807aa008dcaa7f3 = L.popup({maxWidth: '300'});
+
+            
+                var html_3a2855b4e7ab477a9203be36ead810b5 = $('         <div id="html_3a2855b4e7ab477a9203be36ead810b5"                 style="width: 100.0%; height: 100.0%;">                 District MK45   Full#:33440 Provisional#:3052 Full%=91.6%.</div>                 ')[0];
+                popup_903a2ffb7fec49829807aa008dcaa7f3.setContent(html_3a2855b4e7ab477a9203be36ead810b5);
+            
+
+            marker_eec48b613d6243eda79896e3dfe6e9a3.bindPopup(popup_903a2ffb7fec49829807aa008dcaa7f3);
+
+            
+        
+        
+            
+
+            var marker_fea06ecc917b4601a4454b6296970d61 = L.marker(
+                [52.15748,-0.695984],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2163711f03c44733aaa4e99240941eb6);
+            
+        
+            
+
+                var icon_34571e5e573341f8930e60d4749c6e5f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fea06ecc917b4601a4454b6296970d61.setIcon(icon_34571e5e573341f8930e60d4749c6e5f);
+            
+        
+            
+            var popup_779f1189b04346eeb6b1ab12ee25a414 = L.popup({maxWidth: '300'});
+
+            
+                var html_cd15769f41654f80818e828f4e63c3d5 = $('         <div id="html_cd15769f41654f80818e828f4e63c3d5"                 style="width: 100.0%; height: 100.0%;">                 District MK46   Full#:7112 Provisional#:541 Full%=92.9%.</div>                 ')[0];
+                popup_779f1189b04346eeb6b1ab12ee25a414.setContent(html_cd15769f41654f80818e828f4e63c3d5);
+            
+
+            marker_fea06ecc917b4601a4454b6296970d61.bindPopup(popup_779f1189b04346eeb6b1ab12ee25a414);
+
+            
+        
+        
+        
+        </script>
+        

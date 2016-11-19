@@ -1,0 +1,264 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_ff2b2c50453d43788b6bdb6163eda850 {
+                position : relative;
+                width : 500.0px;
+                height: 500.0px;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_ff2b2c50453d43788b6bdb6163eda850" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_ff2b2c50453d43788b6bdb6163eda850 = L.map('map_ff2b2c50453d43788b6bdb6163eda850', {
+                                           center:[52.024696,-0.71071],
+                                           zoom: 14,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_8bf320be87574c85bfb17f43d691d8f8 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 16,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_ff2b2c50453d43788b6bdb6163eda850);
+
+        
+        
+            
+
+            var marker_f8b45fe5f5774ef19ec51cafe4ff29bc = L.marker(
+                [52.024696,-0.71071],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ff2b2c50453d43788b6bdb6163eda850);
+            
+        
+            
+
+                var icon_ba6d5624606a40ed9d748e4e50fcb4ef = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f8b45fe5f5774ef19ec51cafe4ff29bc.setIcon(icon_ba6d5624606a40ed9d748e4e50fcb4ef);
+            
+        
+            
+            var popup_810fb6b7543e46fe957a96044decfa81 = L.popup({maxWidth: '300'});
+
+            
+                var html_5f8219c747004dcaaa3c3afaadcb269d = $('         <div id="html_5f8219c747004dcaaa3c3afaadcb269d"                 style="width: 100.0%; height: 100.0%;">                 Walton Hall, The Open University</div>                 ')[0];
+                popup_810fb6b7543e46fe957a96044decfa81.setContent(html_5f8219c747004dcaaa3c3afaadcb269d);
+            
+
+            marker_f8b45fe5f5774ef19ec51cafe4ff29bc.bindPopup(popup_810fb6b7543e46fe957a96044decfa81);
+
+            
+        
+        
+            
+
+            var marker_206be84a58484e91953ac4a64b9620dd = L.marker(
+                [52.025638,-0.702336],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ff2b2c50453d43788b6bdb6163eda850);
+            
+        
+            
+
+                var icon_bf938cb0500645eca3bdd970007dc34f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_206be84a58484e91953ac4a64b9620dd.setIcon(icon_bf938cb0500645eca3bdd970007dc34f);
+            
+        
+            
+            var popup_b38b270188994797a8451cbe3f7a4e9f = L.popup({maxWidth: '300'});
+
+            
+                var html_2b651dc8818149e9bb1f2cf0d0b7a69f = $('         <div id="html_2b651dc8818149e9bb1f2cf0d0b7a69f"                 style="width: 100.0%; height: 100.0%;">                 The East Campus of the Open University</div>                 ')[0];
+                popup_b38b270188994797a8451cbe3f7a4e9f.setContent(html_2b651dc8818149e9bb1f2cf0d0b7a69f);
+            
+
+            marker_206be84a58484e91953ac4a64b9620dd.bindPopup(popup_b38b270188994797a8451cbe3f7a4e9f);
+
+            
+        
+        
+            
+                var poly_line_0f76d85ce900467ba256a6dd2a8b0b61 = L.polyline(
+                    [[52.025638, -0.702336], [52.0249, -0.702], [52.0246, -0.7035], [52.027, -0.7056], [52.0265, -0.7072], [52.0243, -0.7062], [52.0237, -0.7101], [52.0245, -0.7107], [52.024696, -0.71071]],
+                    {
+                        color: 'red',
+                        weight: 10,
+                        opacity: 0.5,
+                        });
+                map_ff2b2c50453d43788b6bdb6163eda850.addLayer(poly_line_0f76d85ce900467ba256a6dd2a8b0b61);
+            
+        
+            
+            var popup_e8031e1339594d67a17080b16ac12576 = L.popup({maxWidth: '300'});
+
+            
+                var html_1739161ff89347ee88858aa26794c585 = $('         <div id="html_1739161ff89347ee88858aa26794c585"                 style="width: 100.0%; height: 100.0%;">                 safe route</div>                 ')[0];
+                popup_e8031e1339594d67a17080b16ac12576.setContent(html_1739161ff89347ee88858aa26794c585);
+            
+
+            poly_line_0f76d85ce900467ba256a6dd2a8b0b61.bindPopup(popup_e8031e1339594d67a17080b16ac12576);
+
+            
+        
+        
+        
+        </script>
+        
