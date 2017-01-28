@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-16"?><html><head><style type="text/css">        
+          * {font-size: small; font-family: Arial, Verdana, Geneva, Helvetica, sans-serif}
+          *.MonoSpaced {font-size: small; font-family: Arial Terminal, Courier New, Courier; border: 1px solid black}
+          *.MonoSpacedBold {font-size: small; font-family: Arial Terminal, Courier New, Courier; font-weight: bold; border: 1px solid black}
+          *.FieldTitle {font-size: x-small; font-family: arial}
+          *.MainTitle {font-size: large; font-family: arial black}
+          *.border {border-style: 1px solid black}
+        </style><title>PT3</title></head><body><table class="border" cellspacing="1" cellpadding="1" width="100%"><tr><td width="19%" valign="top"><p><a name="MT_PT3_All"><img src="PT3OULogo.gif" /></a></p></td><td width="55%" align="middle"><b><span class="MainTitle">
+                  TMA&nbsp;FORM&nbsp;(PT3e)
+                </span></b></td><td width="26%" valign="TOP">&nbsp;</td></tr></table><br /><table width="100%" cellspacing="1" cellpadding="1"><tr><td width="50%" style="white-space: nowrap">&nbsp;
+              SECTION&nbsp;1&nbsp;&nbsp;&nbsp;STUDENT&nbsp;INFORMATION
+            </td><td width="50%" style="white-space: nowrap">&nbsp;
+              SECTION&nbsp;2&nbsp;&nbsp;&nbsp;TUTOR&nbsp;INFORMATION
+            </td></tr><tr><td><table width="100%" cellspacing="5" cellpadding="3"><tr><td width="23%" class="FieldTitle">
+                    Name
+                  </td><td width="77%" colspan="3" class="MonoSpaced">Pablo Toledo</td></tr><tr><td class="FieldTitle">
+                    Personal<br />
+                    Identifier
+                  </td><td colspan="3" class="MonoSpaced">C4451553</td></tr><tr><td class="FieldTitle">
+                    Sent By<br />
+                    Student
+                  </td><td colspan="3" class="MonoSpaced">27-Nov-2016</td></tr><tr><td class="FieldTitle">
+                    Module
+                  </td><td class="MonoSpaced" style="white-space: nowrap">TM351&nbsp;Oct&nbsp;16</td><td class="FieldTitle">
+                    TMA No.
+                  </td><td class="MonoSpaced">01</td></tr></table></td><td valign="top"><table width="100%" cellspacing="5" cellpadding="5"><tr><td width="23%" class="FieldTitle">
+                    Tutor's Name
+                  </td><td width="77%" class="MonoSpaced">Dr AP Huxor</td></tr><tr><td valign="top" class="FieldTitle">
+                    Tutor's Number
+                  </td><td class="MonoSpaced">03173951</td></tr><tr><td valign="top" class="FieldTitle">
+                    Appointing Region
+                  </td><td class="MonoSpaced">R08&nbsp;</td></tr><tr><td valign="top" class="FieldTitle">
+                    Date Returned
+                  </td><td class="MonoSpaced">04-Jan-2017</td></tr></table></td></tr></table><table width="100%"><tr><td width="50%" valign="bottom" class="FieldTitle">
+              Question Grades/Scores
+            </td><td width="50%" align="right" class="FieldTitle">
+              Overall<br />
+              Grade/Score
+            </td></tr></table><table width="100%" border="1"><tr><td width="4.65%" align="middle" class="FieldTitle">
+              1
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              2
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              3
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              4
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              5
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              6
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              7
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              8
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              9
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              10
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              11
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              12
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              13
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              14
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              15
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              16
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              17
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              18
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              19
+            </td><td width="4.65%" align="middle" class="FieldTitle">
+              20
+            </td><td width="7%" rowspan="2" align="middle" class="MonoSpacedBold">92</td></tr><tr><td align="middle" class="MonoSpaced">14</td><td align="middle" class="MonoSpaced">36</td><td align="middle" class="MonoSpaced">42</td></tr></table><br /><br />
+         See section after Tutor's Comments for Question Part Scores
+        <br /><br />
+        TUTOR'S COMMENTS AND ADVICE TO STUDENT: <br /><br />Pablo<br />
+<br />
+In summary: an excellent piece of work, with marks to match. You clearly have grasped python/pandas and OpenRefine. This will put you in a good position for the next TMA and the EMA.<br />
+My only major comment is that you need to send even more time understanding the data. Given Google searching, this is not as difficult as it used to be, and important to make the conclusions you draw from the data analysis robust. I have made specific comments below, and also added a few cells to the notebooks.<br />
+<br />
+Qu2.<br />
+You have done a very good job using OpenRefine to deal with missing and odd data. That said, there were still schools with no parish in the dataframe. I found a webite that returns a parish for any postcode... https://www.achurchnearyou.com/parishmap.php<br />
+<br />
+I must admit that when using such trivially small datasets such as those in the TMA, I find it more useful to create new dataframes (with unique names) throughout the slicing and dicing process. It makes debugging easier should there be problems.<br />
+Also, due to the samll size, there is little need to reduce the columns available to you too early in the data analysis process. When you have many MB of data, it may be worth doing, but these files are so small.<br />
+<br />
+Qu3.<br />
+An excellent answer to this question. My only concern is that by setting non-answered questions to 0 you have defferent answers to the model solutions. I am sure that this is explained only by the setting non-answered to 0, as your code seems correct for all other tasks, so I have given full marks. Using non-answers are set to a NaN type value, to avoid making a judgment. Maybe the student just missed that question, or ran out of time etc.<br />
+I would also challenge the decision to re-order the plots by the mean value of the questions, rather than using the natural ordering that the question numbers themselves impose.<br />
+<br />
+<br /><br /><br /><br />
+           QUESTION PART SCORES: <br /><br /><table cellspacing="0" cellpadding="1" width="100%" align="left"><tr><td width="20%" /><td width="20%" /><td width="20%" /><td width="20%" /></tr><tr><td>
+            Question 
+           </td><td>
+            Part Desc
+           </td><td>
+            Max Score
+           </td><td>
+            Student Part Score
+           </td></tr><tr><td>01</td><td>a</td><td>5</td><td>5</td></tr><tr><td>01</td><td>b</td><td>10</td><td>9</td></tr><tr><td>02</td><td>task1</td><td>1</td><td>1</td></tr><tr><td>02</td><td>task2</td><td>8</td><td>7</td></tr><tr><td>02</td><td>task3</td><td>6</td><td>5</td></tr><tr><td>02</td><td>task4</td><td>6</td><td>5</td></tr><tr><td>02</td><td>task5</td><td>6</td><td>6</td></tr><tr><td>02</td><td>task6</td><td>4</td><td>3</td></tr><tr><td>02</td><td>task7</td><td>4</td><td>4</td></tr><tr><td>02</td><td>task8</td><td>5</td><td>5</td></tr><tr><td>03</td><td>a</td><td>8</td><td>8</td></tr><tr><td>03</td><td>b</td><td>4</td><td>4</td></tr><tr><td>03</td><td>c</td><td>3</td><td>3</td></tr><tr><td>03</td><td>d</td><td>8</td><td>8</td></tr><tr><td>03</td><td>e</td><td>7</td><td>6</td></tr><tr><td>03</td><td>f</td><td>5</td><td>4</td></tr><tr><td>03</td><td>g</td><td>10</td><td>9</td></tr></table></body></html>
